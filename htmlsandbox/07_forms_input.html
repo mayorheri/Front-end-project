@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & input</title>
+</head>
+<body>
+  <form action="process.php">
+      <!-- <div> TAG IS USED TO SEPRATE LABELS AND INPUT-->
+
+      <div>
+          <!-- TEXT -->
+          <!-- THE <br> TAG IS USED FOR LINE BREAK-->
+          <label for="Name">Name</label><br>
+          <!-- PLACEHOLDER is like used in giving instructions in the form-->
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+      </div>
+      <div>
+          <!-- EMAIL -->
+          <!-- THE <br> TAG IS USED FOR LINE BREAK-->
+          <label for="email">Email</label><br>
+          <!-- PLACEHOLDER is like used in giving instructions in the form-->
+          <input type="email" name="email" id="email" placeholder="Enter a valid Email">
+      </div>
+
+      <!-- TEXTAREA-->
+
+      <div>
+          <label for="message">message</label><br>
+          <textarea name="message" id="message" cols="30" rows="5"></textarea>
+      </div>
+      
+      <!-- SELECT-->
+
+      <div>
+          <label for="sex">sex</label>
+          <select name="sex" id="sex">
+              <!-- adding the word SELECTED would make it to be pre selected on the web page-->
+              <option value="Male" selected>Male</option>
+              <option value="Female">Female</option>
+              <option value="others">others</option>
+
+          </select>
+      </div>
+      <!-- NUMBER-->
+
+      <div>
+          <label for="age">Age</label><br>
+          <input type="number" name="age" id="age" >
+      </div>
+
+      <!-- DATE -->
+      <div>
+          <label for="birthdate">Birthday</label><br>
+          <input type="date" name="birthdate" id="birthdate">
+      </div>
+
+      <!-- RADIO -->
+      <div>
+          <label for="membership">Membership</label><br>
+          <!-- in the RADIO button you can only select one option-->
+          <input type="radio"membership" name="membership" value="simple" id="membership">simple
+          <!-- ADDING THE WORD checked IN BETWEEN ANY OF THIS LINES WOULD MAKE IT TO BE PRE SELECTED ON THE WEB PAGE-->
+          <input type="radio"membership" name="membership" value="standard" id="membership" checked>standard
+          <input type="radio"membership" name="membership" value="super" id="membership">super
+      </div>
+      
+      <!-- CHECKBOX -->
+      <div>
+        <label for="membership">I like....</label><br>
+        <!-- in the CHECKBOX button you can  select multiple options-->
+        <input type="checkbox"membership" name="membership" value="bike" id="likes">bike
+        <!-- ADDING THE WORD checked IN BETWEEN ANY OF THIS LINES WOULD MAKE IT TO BE PRE SELECTED ON THE WEB PAGE-->
+        <input type="checkbox"likes" name="likes" value="car" id="likes" >car
+        <input type="checkbox"likes" name="likes" value="boat" id="likes">boat
+    </div>
+    <!-- INPUT SUBMIT -->
+    <!-- TO SUBMIT A FORM-->
+    <input type="submit" value="submit">
+
+    <!-- BUTTON SUBMIT -->
+    <!-- using a button tag-->
+    <!--button type="submit">Submit</button-->
+    <button type="reset">Reset</button>
+</form>  
+</body>
+</html>
